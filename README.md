@@ -21,25 +21,8 @@ rm -rf kubectl
 k3d cluster create <NomeDoNovoCluster>
 ```
 
-## Listar clusters
+## Apply Demo Wordpress
 
 ```
-k3d cluster list
-```
-
-## Deletar Cluster
-```
-k3d cluster delete <NomeDoNovoCluster>
-
-```
-## Criar cluster com múltiplos nós
-
-```
-k3d cluster create <NomeDoNovoCluster> --servers 2 --agents 3
-
-```
-## Listar nodes ativos
-
-```
-kubectl get nodes
+kubectl apply -f manifest.yaml
 ```
